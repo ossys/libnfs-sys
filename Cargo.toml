@@ -1,7 +1,15 @@
 [package]
 name = "libnfs-sys"
+description = "libnfs bindings allow you to create nfs mounts in memory/userspace"
 version = "0.1.0"
 authors = ["Chris Holcombe <xfactor973@gmail.com>"]
+homepage = "https://github.com/cholcombe973/libnfs-sys"
+repository = "https://github.com/cholcombe973/libnfs-sys"
+documentation = "https://docs.rs/libnfs-sys"
+license = "MIT"
+readme = "README.md"
+keywords = ["nfs"]
+categories = ["api-bindings", "network-programming", "filesystem", "external-ffi-bindings"]
 
 [build-dependencies]
 bindgen = "0.26.3"
