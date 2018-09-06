@@ -4,8 +4,6 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-    // Tell cargo to tell rustc to link the system bzip2
-    // shared library.
     println!("cargo:rustc-link-lib=nfs");
 
     // The bindgen::Builder is the main entry point
@@ -15,6 +13,7 @@ fn main() {
     // The input header we would like to generate
     // bindings for.
     .header("wrapper.h")
+    //.blacklist_type("statvfs")
     // Finish the builder and generate the bindings.
     .generate()
     // Unwrap the Result and panic on failure.
