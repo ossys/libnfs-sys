@@ -12,6 +12,6 @@ keywords = ["nfs"]
 categories = ["api-bindings", "network-programming", "filesystem", "external-ffi-bindings"]
 
 [build-dependencies]
-bindgen = "~0.43"
+bindgen = "~0.46"
 
 [dependencies]
